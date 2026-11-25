@@ -16,7 +16,7 @@
 $ErrorActionPreference = "Stop"
 
 $repoDir = $PSScriptRoot
-$repoSlug = "B4N4NO/free-media"
+$repoSlug = "baninafra/free-media"
 $manifestPath = Join-Path $repoDir "updates.json"
 $manifest = Get-Content -Raw -Encoding UTF8 $manifestPath | ConvertFrom-Json
 

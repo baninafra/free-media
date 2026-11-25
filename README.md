@@ -4,8 +4,8 @@ Repositorio oficial de lanzamientos y actualizaciones automáticas OTA para **Fr
 
 ## Descargar APKs (Android)
 
-- **Free Music**: [Descargar última versión](https://github.com/B4N4NO/free-media/releases/latest)
-- **Free Video**: [Descargar última versión](https://github.com/B4N4NO/free-media/releases/latest)
+- **Free Music**: [Descargar última versión](https://github.com/baninafra/free-media/releases/latest)
+- **Free Video**: [Descargar última versión](https://github.com/baninafra/free-media/releases/latest)
 
 Una vez instaladas, ambas apps buscan actualizaciones automáticamente al abrirse y te permiten descargar e instalar nuevas versiones con un toque desde dentro de la app.
 
