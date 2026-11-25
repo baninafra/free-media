@@ -144,8 +144,13 @@ try {
     git push origin main
 
     # Check if release tag already exists
-    $existing = gh release view $tagName --repo $repoSlug 2>&1
-    if ($LASTEXITCODE -eq 0) {
+    $prevPref = $ErrorActionPreference
+    $ErrorActionPreference = "Continue"
+    $null = gh release view $tagName --repo $repoSlug 2>&1
+    $existsCode = $LASTEXITCODE
+    $ErrorActionPreference = $prevPref
+
+    if ($existsCode -eq 0) {
         Write-Host "Actualizando assets en release existente $tagName..." -ForegroundColor Yellow
         gh release upload $tagName @releaseAssets --clobber --repo $repoSlug
         gh release edit $tagName --notes $Notes --repo $repoSlug
