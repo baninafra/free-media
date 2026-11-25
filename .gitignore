@@ -1,0 +1,5 @@
+*.apk
+*.jks
+*.keystore
+*.properties
+dist/
