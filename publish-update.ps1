@@ -10,7 +10,8 @@
 
     [switch]$SkipBump,
     [switch]$Install,
-    [switch]$Desktop
+    [switch]$Desktop,
+    [switch]$SkipLocalInstall
 )
 
 $ErrorActionPreference = "Stop"
@@ -134,10 +135,27 @@ foreach ($cfg in $apps) {
         $exeUrl = "https://github.com/$repoSlug/releases/download/$tagName/$exeName"
         $entry | Add-Member -NotePropertyName exeUrl -NotePropertyValue $exeUrl -Force
 
-        Write-Host "Instalando $($cfg.Name) v$Version en esta PC..." -ForegroundColor Cyan
-        Get-Process -Name $cfg.ProcessName -ErrorAction SilentlyContinue | Stop-Process -Force
-        Start-Sleep -Seconds 1
-        Start-Process -FilePath $exeDest -ArgumentList "/S" -Wait
+        if (!$SkipLocalInstall) {
+            Write-Host "Instalando $($cfg.Name) v$Version en esta PC..." -ForegroundColor Cyan
+            Get-Process -Name $cfg.ProcessName -ErrorAction SilentlyContinue | Stop-Process -Force
+            Start-Sleep -Seconds 1
+            Start-Process -FilePath $exeDest -ArgumentList "/S" -Wait
+
+            # El instalador silencioso solo crea el acceso del menú Inicio: agregar el del escritorio
+            $installedExe = Join-Path $env:LOCALAPPDATA "$($cfg.Name)\$($cfg.ProcessName).exe"
+            if (Test-Path $installedExe) {
+                $desktopDir = [Environment]::GetFolderPath("Desktop")
+                $shell = New-Object -ComObject WScript.Shell
+                $lnk = $shell.CreateShortcut((Join-Path $desktopDir "$($cfg.Name).lnk"))
+                $lnk.TargetPath = $installedExe
+                $lnk.WorkingDirectory = Split-Path $installedExe
+                $lnk.IconLocation = "$installedExe,0"
+                $lnk.Save()
+                Start-Process -FilePath $installedExe
+            } else {
+                Write-Warning "No se encontró $installedExe después de instalar"
+            }
+        }
     }
 }
 

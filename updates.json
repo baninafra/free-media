@@ -1,18 +1,18 @@
 {
     "freeMusic":  {
                       "appName":  "Free Music",
-                      "version":  "1.0.4",
-                      "versionCode":  1005,
-                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/v1.0.4/FreeMusic-v1.0.4.apk",
-                      "notes":  "Nuevas animaciones en toda la app, barra de título integrada en PC, actualizaciones automáticas también en PC y volumen más suave y parejo (ya no suena tan fuerte).",
-                      "exeUrl":  "https://github.com/baninafra/free-media/releases/download/v1.0.4/FreeMusic-v1.0.4-setup.exe"
+                      "version":  "1.0.5",
+                      "versionCode":  1006,
+                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/v1.0.5/FreeMusic-v1.0.5.apk",
+                      "notes":  "Pantallas de carga nuevas estilo YouTube, botones de ventana integrados en la barra del buscador en PC, diseño más limpio sin brillos ni sombras, el botón de play vuelve a ponerse blanco al pasar el mouse y se quitó la etiqueta \u0027Reproduciendo\u0027 de los títulos.",
+                      "exeUrl":  "https://github.com/baninafra/free-media/releases/download/v1.0.5/FreeMusic-v1.0.5-setup.exe"
                   },
     "freeVideo":  {
                       "appName":  "Free Video",
-                      "version":  "1.0.4",
-                      "versionCode":  1005,
-                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/v1.0.4/FreeVideo-v1.0.4.apk",
-                      "notes":  "Nuevas animaciones en toda la app, barra de título integrada en PC, actualizaciones automáticas también en PC y volumen más suave y parejo (ya no suena tan fuerte).",
-                      "exeUrl":  "https://github.com/baninafra/free-media/releases/download/v1.0.4/FreeVideo-v1.0.4-setup.exe"
+                      "version":  "1.0.5",
+                      "versionCode":  1006,
+                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/v1.0.5/FreeVideo-v1.0.5.apk",
+                      "notes":  "Pantallas de carga nuevas estilo YouTube, botones de ventana integrados en la barra del buscador en PC, diseño más limpio sin brillos ni sombras, el botón de play vuelve a ponerse blanco al pasar el mouse y se quitó la etiqueta \u0027Reproduciendo\u0027 de los títulos.",
+                      "exeUrl":  "https://github.com/baninafra/free-media/releases/download/v1.0.5/FreeVideo-v1.0.5-setup.exe"
                   }
 }
