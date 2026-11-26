@@ -29,6 +29,7 @@ if ($App -eq "music" -or $App -eq "both") {
         PackageId = "com.celeste.music"
         Dir = "C:\Users\fbani\claude code\Music"
         TagPrefix = "free-music"
+        ProcessName = "celeste"
     }
 }
 if ($App -eq "video" -or $App -eq "both") {
@@ -39,6 +40,7 @@ if ($App -eq "video" -or $App -eq "both") {
         PackageId = "com.telechea.video"
         Dir = "C:\Users\fbani\claude code\Telechea"
         TagPrefix = "free-video"
+        ProcessName = "telechea"
     }
 }
 
@@ -113,19 +115,29 @@ foreach ($cfg in $apps) {
     }
 
     if ($Desktop) {
-        Write-Host "Compilando e instalando $($cfg.Name) en PC..." -ForegroundColor Cyan
+        Write-Host "Compilando instalador de PC de $($cfg.Name)..." -ForegroundColor Cyan
         Push-Location $cfg.Dir
         try {
             & .\scripts\build-desktop.ps1
-            if ($LASTEXITCODE -eq 0) {
-                $setup = Get-ChildItem "src-tauri\target\release\bundle\nsis\*-setup.exe" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
-                if ($setup) {
-                    Start-Process -FilePath $setup.FullName -ArgumentList "/S" -Wait
-                }
-            }
+            if ($LASTEXITCODE -ne 0) { throw "Falló la compilación de PC de $($cfg.Name)" }
+            $setup = Get-ChildItem "src-tauri\target\release\bundle\nsis\*_$($Version)_*-setup.exe" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
+            if (!$setup) { throw "No se encontró el instalador NSIS v$Version de $($cfg.Name)" }
         } finally {
             Pop-Location
         }
+
+        # Publicar el instalador para que la app de PC se actualice sola
+        $exeName = "$($cfg.AssetPrefix)-v$Version-setup.exe"
+        $exeDest = Join-Path $stagingDir $exeName
+        Copy-Item -Force $setup.FullName $exeDest
+        $releaseAssets += $exeDest
+        $exeUrl = "https://github.com/$repoSlug/releases/download/$tagName/$exeName"
+        $entry | Add-Member -NotePropertyName exeUrl -NotePropertyValue $exeUrl -Force
+
+        Write-Host "Instalando $($cfg.Name) v$Version en esta PC..." -ForegroundColor Cyan
+        Get-Process -Name $cfg.ProcessName -ErrorAction SilentlyContinue | Stop-Process -Force
+        Start-Sleep -Seconds 1
+        Start-Process -FilePath $exeDest -ArgumentList "/S" -Wait
     }
 }
 

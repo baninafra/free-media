@@ -1,16 +1,18 @@
 {
     "freeMusic":  {
                       "appName":  "Free Music",
-                      "version":  "1.0.3",
-                      "versionCode":  1004,
-                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/v1.0.3/FreeMusic-v1.0.3.apk",
-                      "notes":  "Soporte para links de artistas/canales de YouTube Music (como playlist reproducible con aleatorio, descargas, álbumes y artistas similares), eliminada la doble X en la barra de búsqueda y limpieza automática de la barra tras buscar o pegar un link."
+                      "version":  "1.0.4",
+                      "versionCode":  1005,
+                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/v1.0.4/FreeMusic-v1.0.4.apk",
+                      "notes":  "Nuevas animaciones en toda la app, barra de título integrada en PC, actualizaciones automáticas también en PC y volumen más suave y parejo (ya no suena tan fuerte).",
+                      "exeUrl":  "https://github.com/baninafra/free-media/releases/download/v1.0.4/FreeMusic-v1.0.4-setup.exe"
                   },
     "freeVideo":  {
                       "appName":  "Free Video",
-                      "version":  "1.0.3",
+                      "version":  "1.0.4",
                       "versionCode":  1004,
-                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/v1.0.3/FreeVideo-v1.0.3.apk",
-                      "notes":  "Soporte para links de artistas/canales de YouTube Music (como playlist reproducible con aleatorio, descargas, álbumes y artistas similares), eliminada la doble X en la barra de búsqueda y limpieza automática de la barra tras buscar o pegar un link."
+                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/v1.0.4/FreeVideo-v1.0.4.apk",
+                      "notes":  "Nuevas animaciones en toda la app, barra de título integrada en PC, actualizaciones automáticas también en PC y volumen más suave y parejo (ya no suena tan fuerte).",
+                      "exeUrl":  "https://github.com/baninafra/free-media/releases/download/v1.0.4/FreeVideo-v1.0.4-setup.exe"
                   }
 }

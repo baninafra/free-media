@@ -24,4 +24,4 @@ Desde PowerShell en esta carpeta (`c:\Users\fbani\claude code\free-media`):
 .\publish-update.ps1 -App both -Version 1.0.1 -Notes "Actualización general"
 ```
 
-Agregá `-Install` si además querés instalar el APK en tu celular conectado por USB, o `-Desktop` para compilar e instalar también en tu PC.
+Agregá `-Install` si además querés instalar el APK en tu celular conectado por USB, o `-Desktop` para compilar el instalador de PC, subirlo a la release (las apps de PC se actualizan solas desde `exeUrl`) e instalarlo en esta PC.
