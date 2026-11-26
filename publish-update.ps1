@@ -137,12 +137,28 @@ foreach ($cfg in $apps) {
 
         if (!$SkipLocalInstall) {
             Write-Host "Instalando $($cfg.Name) v$Version en esta PC..." -ForegroundColor Cyan
-            Get-Process -Name $cfg.ProcessName -ErrorAction SilentlyContinue | Stop-Process -Force
-            Start-Sleep -Seconds 1
-            Start-Process -FilePath $exeDest -ArgumentList "/S" -Wait
+            $installedExe = Join-Path $env:LOCALAPPDATA "$($cfg.Name)\$($cfg.ProcessName).exe"
+            $installed = $false
+            for ($attempt = 1; $attempt -le 3 -and -not $installed; $attempt++) {
+                # Esperar a que la app se cierre de verdad: si el .exe sigue bloqueado el
+                # instalador silencioso no lo reemplaza y no avisa.
+                $running = Get-Process -Name $cfg.ProcessName -ErrorAction SilentlyContinue
+                if ($running) {
+                    $running | Stop-Process -Force
+                    $running | Wait-Process -Timeout 15 -ErrorAction SilentlyContinue
+                }
+                Start-Sleep -Seconds 2
+                Start-Process -FilePath $exeDest -ArgumentList "/S" -Wait
+                if (Test-Path $installedExe) {
+                    $installed = ((Get-Item $installedExe).VersionInfo.ProductVersion -eq $Version)
+                }
+                if (-not $installed) {
+                    Write-Warning "Intento $attempt: $($cfg.Name) no quedó en v$Version, reintentando..."
+                }
+            }
+            if (-not $installed) { throw "No se pudo instalar $($cfg.Name) v$Version en esta PC" }
 
             # El instalador silencioso solo crea el acceso del menú Inicio: agregar el del escritorio
-            $installedExe = Join-Path $env:LOCALAPPDATA "$($cfg.Name)\$($cfg.ProcessName).exe"
             if (Test-Path $installedExe) {
                 $desktopDir = [Environment]::GetFolderPath("Desktop")
                 $shell = New-Object -ComObject WScript.Shell
