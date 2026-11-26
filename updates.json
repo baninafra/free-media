@@ -1,16 +1,16 @@
 {
     "freeMusic":  {
                       "appName":  "Free Music",
-                      "version":  "1.0.0",
-                      "versionCode":  1001,
-                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/v1.0.0/FreeMusic-v1.0.0.apk",
-                      "notes":  "Lanzamiento v1.0.0 de Free Music y Free Video: nuevos nombres, controles móviles corregidos en Free Video, sin colas automáticas, continuación automática de música similar/descargas en Free Music y sistema de actualizaciones automáticas."
+                      "version":  "1.0.1",
+                      "versionCode":  1002,
+                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/v1.0.1/FreeMusic-v1.0.1.apk",
+                      "notes":  "Botones táctiles corregidos en celular (márgenes del sistema Android y controles del reproductor), botones activos en color celeste, indicador de reproducción en el encabezado de playlists y barra superior de filtros en una sola línea escroleable."
                   },
     "freeVideo":  {
                       "appName":  "Free Video",
-                      "version":  "1.0.0",
-                      "versionCode":  1001,
-                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/v1.0.0/FreeVideo-v1.0.0.apk",
-                      "notes":  "Lanzamiento v1.0.0 de Free Music y Free Video: nuevos nombres, controles móviles corregidos en Free Video, sin colas automáticas, continuación automática de música similar/descargas en Free Music y sistema de actualizaciones automáticas."
+                      "version":  "1.0.1",
+                      "versionCode":  1002,
+                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/v1.0.1/FreeVideo-v1.0.1.apk",
+                      "notes":  "Botones táctiles corregidos en celular (márgenes del sistema Android y controles del reproductor), botones activos en color celeste, indicador de reproducción en el encabezado de playlists y barra superior de filtros en una sola línea escroleable."
                   }
 }
