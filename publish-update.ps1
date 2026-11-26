@@ -153,7 +153,7 @@ foreach ($cfg in $apps) {
                     $installed = ((Get-Item $installedExe).VersionInfo.ProductVersion -eq $Version)
                 }
                 if (-not $installed) {
-                    Write-Warning "Intento $attempt: $($cfg.Name) no quedó en v$Version, reintentando..."
+                    Write-Warning "Intento ${attempt}: $($cfg.Name) no quedó en v$Version, reintentando..."
                 }
             }
             if (-not $installed) { throw "No se pudo instalar $($cfg.Name) v$Version en esta PC" }
