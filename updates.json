@@ -1,11 +1,11 @@
 {
     "freeMusic":  {
                       "appName":  "Free Music",
-                      "version":  "1.0.7",
-                      "versionCode":  1008,
-                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.0.7/FreeMusic-v1.0.7.apk",
-                      "notes":  "Mejoras y correcciones.",
-                      "exeUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.0.7/FreeMusic-v1.0.7-setup.exe"
+                      "version":  "1.0.8",
+                      "versionCode":  1009,
+                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.0.8/FreeMusic-v1.0.8.apk",
+                      "notes":  "Boton Volver junto al buscador, opciones de cada cancion en menu de 3 puntos, portada en alta calidad y botones anterior/siguiente sin estados grises.",
+                      "exeUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.0.8/FreeMusic-v1.0.8-setup.exe"
                   },
     "freeVideo":  {
                       "appName":  "Free Video",
