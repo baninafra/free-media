@@ -1,16 +1,16 @@
 {
     "freeMusic":  {
                       "appName":  "Free Music",
-                      "version":  "1.0.1",
-                      "versionCode":  1002,
-                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/v1.0.1/FreeMusic-v1.0.1.apk",
-                      "notes":  "Botones táctiles corregidos en celular (márgenes del sistema Android y controles del reproductor), botones activos en color celeste, indicador de reproducción en el encabezado de playlists y barra superior de filtros en una sola línea escroleable."
+                      "version":  "1.0.2",
+                      "versionCode":  1003,
+                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/v1.0.2/FreeMusic-v1.0.2.apk",
+                      "notes":  "Estilo de botones activos refinado: ahora se ilumina en celeste el ícono/texto interior manteniendo el fondo oscuro limpio."
                   },
     "freeVideo":  {
                       "appName":  "Free Video",
-                      "version":  "1.0.1",
-                      "versionCode":  1002,
-                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/v1.0.1/FreeVideo-v1.0.1.apk",
-                      "notes":  "Botones táctiles corregidos en celular (márgenes del sistema Android y controles del reproductor), botones activos en color celeste, indicador de reproducción en el encabezado de playlists y barra superior de filtros en una sola línea escroleable."
+                      "version":  "1.0.2",
+                      "versionCode":  1003,
+                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/v1.0.2/FreeVideo-v1.0.2.apk",
+                      "notes":  "Estilo de botones activos refinado: ahora se ilumina en celeste el ícono/texto interior manteniendo el fondo oscuro limpio."
                   }
 }
