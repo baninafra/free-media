@@ -1,11 +1,11 @@
 {
     "freeMusic":  {
                       "appName":  "Free Music",
-                      "version":  "1.0.6",
-                      "versionCode":  1007,
-                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/v1.0.6/FreeMusic-v1.0.6.apk",
+                      "version":  "1.0.7",
+                      "versionCode":  1008,
+                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.0.7/FreeMusic-v1.0.7.apk",
                       "notes":  "Mejoras y correcciones.",
-                      "exeUrl":  "https://github.com/baninafra/free-media/releases/download/v1.0.6/FreeMusic-v1.0.6-setup.exe"
+                      "exeUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.0.7/FreeMusic-v1.0.7-setup.exe"
                   },
     "freeVideo":  {
                       "appName":  "Free Video",
