@@ -1,11 +1,11 @@
 {
     "freeMusic":  {
                       "appName":  "Free Music",
-                      "version":  "1.0.9",
-                      "versionCode":  1010,
-                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.0.9/FreeMusic-v1.0.9.apk",
-                      "notes":  "Animacion al volver del reproductor y del panel lateral; las animaciones de la playlist ya no se repiten al tocar botones.",
-                      "exeUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.0.9/FreeMusic-v1.0.9-setup.exe"
+                      "version":  "1.0.10",
+                      "versionCode":  1011,
+                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.0.10/FreeMusic-v1.0.10.apk",
+                      "notes":  "Las canciones arrancan mas rapido (precarga), circulo de carga que ya no se traba en PC y nueva barra de carga bajo el buscador.",
+                      "exeUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.0.10/FreeMusic-v1.0.10-setup.exe"
                   },
     "freeVideo":  {
                       "appName":  "Free Video",
