@@ -1,11 +1,11 @@
 {
     "freeMusic":  {
                       "appName":  "Free Music",
-                      "version":  "1.1.3",
-                      "versionCode":  1016,
-                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.1.3/FreeMusic-v1.1.3.apk",
-                      "notes":  "En PC: nuevo «Iniciar sesión» (opcional) para cuando YouTube no deja reproducir. El aleatorio ahora arranca por cualquier canción. Los artistas muestran sus canciones populares y sus álbumes, y las canciones muestran las reproducciones como en YouTube Music. La búsqueda vuelve a mostrar bien el artista.",
-                      "exeUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.1.3/FreeMusic-v1.1.3-setup.exe"
+                      "version":  "1.1.4",
+                      "versionCode":  1017,
+                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.1.4/FreeMusic-v1.1.4.apk",
+                      "notes":  "Iniciar sesión (opcional) ahora también en el celu, con el botón a la derecha del buscador: sirve cuando YouTube no deja reproducir. Las playlists muestran las reproducciones de cada canción, como YouTube Music.",
+                      "exeUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.1.4/FreeMusic-v1.1.4-setup.exe"
                   },
     "freeVideo":  {
                       "appName":  "Free Video",
