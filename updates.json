@@ -1,11 +1,11 @@
 {
     "freeMusic":  {
                       "appName":  "Free Music",
-                      "version":  "1.1.5",
-                      "versionCode":  1018,
-                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.1.5/FreeMusic-v1.1.5.apk",
-                      "notes":  "En el celu, el logo de Free Music aparece a la izquierda del buscador y se mueve con la música, como en la PC.",
-                      "exeUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.1.5/FreeMusic-v1.1.5-setup.exe"
+                      "version":  "1.1.6",
+                      "versionCode":  1019,
+                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.1.6/FreeMusic-v1.1.6.apk",
+                      "notes":  "En PC: Ctrl+Shift+M abre un mini reproductor donde está el mouse, con pausa, anterior, siguiente, volumen y barra de progreso. Se arregló el Reproducir/Pausar de la bandeja.",
+                      "exeUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.1.6/FreeMusic-v1.1.6-setup.exe"
                   },
     "freeVideo":  {
                       "appName":  "Free Video",
