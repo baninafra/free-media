@@ -1,11 +1,11 @@
 {
     "freeMusic":  {
                       "appName":  "Free Music",
-                      "version":  "1.0.11",
-                      "versionCode":  1012,
-                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.0.11/FreeMusic-v1.0.11.apk",
-                      "notes":  "Las animaciones funcionan siempre, aunque Windows tenga los efectos de animacion desactivados.",
-                      "exeUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.0.11/FreeMusic-v1.0.11-setup.exe"
+                      "version":  "1.1.0",
+                      "versionCode":  1013,
+                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.1.0/FreeMusic-v1.1.0.apk",
+                      "notes":  "Transiciones entre pantallas fluidas, sin microcortes ni animaciones que se repiten. La vista vuelve arriba al cambiar de pantalla.",
+                      "exeUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.1.0/FreeMusic-v1.1.0-setup.exe"
                   },
     "freeVideo":  {
                       "appName":  "Free Video",
