@@ -1,11 +1,11 @@
 {
     "freeMusic":  {
                       "appName":  "Free Music",
-                      "version":  "1.1.4",
-                      "versionCode":  1017,
-                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.1.4/FreeMusic-v1.1.4.apk",
-                      "notes":  "Iniciar sesión (opcional) ahora también en el celu, con el botón a la derecha del buscador: sirve cuando YouTube no deja reproducir. Las playlists muestran las reproducciones de cada canción, como YouTube Music.",
-                      "exeUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.1.4/FreeMusic-v1.1.4-setup.exe"
+                      "version":  "1.1.5",
+                      "versionCode":  1018,
+                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.1.5/FreeMusic-v1.1.5.apk",
+                      "notes":  "En el celu, el logo de Free Music aparece a la izquierda del buscador y se mueve con la música, como en la PC.",
+                      "exeUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.1.5/FreeMusic-v1.1.5-setup.exe"
                   },
     "freeVideo":  {
                       "appName":  "Free Video",
