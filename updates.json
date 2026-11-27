@@ -1,11 +1,11 @@
 {
     "freeMusic":  {
                       "appName":  "Free Music",
-                      "version":  "1.1.0",
-                      "versionCode":  1013,
-                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.1.0/FreeMusic-v1.1.0.apk",
-                      "notes":  "Transiciones entre pantallas fluidas, sin microcortes ni animaciones que se repiten. La vista vuelve arriba al cambiar de pantalla.",
-                      "exeUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.1.0/FreeMusic-v1.1.0-setup.exe"
+                      "version":  "1.1.1",
+                      "versionCode":  1014,
+                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.1.1/FreeMusic-v1.1.1.apk",
+                      "notes":  "Pantalla de reproducción más estable: la portada se adapta al alto (celu girado, teclado abierto, pantallas chicas), la barra de progreso ya no se deforma y las portadas que no cargan muestran un ícono. Al cerrar la letra, el ecualizador o la cola volvés a la canción en vez de al menú.",
+                      "exeUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.1.1/FreeMusic-v1.1.1-setup.exe"
                   },
     "freeVideo":  {
                       "appName":  "Free Video",
