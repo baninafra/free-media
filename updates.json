@@ -1,11 +1,11 @@
 {
     "freeMusic":  {
                       "appName":  "Free Music",
-                      "version":  "1.1.6",
-                      "versionCode":  1019,
-                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.1.6/FreeMusic-v1.1.6.apk",
-                      "notes":  "En PC: Ctrl+Shift+M abre un mini reproductor donde está el mouse, con pausa, anterior, siguiente, volumen y barra de progreso. Se arregló el Reproducir/Pausar de la bandeja.",
-                      "exeUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.1.6/FreeMusic-v1.1.6-setup.exe"
+                      "version":  "1.1.7",
+                      "versionCode":  1020,
+                      "apkUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.1.7/FreeMusic-v1.1.7.apk",
+                      "notes":  "En PC: el mini reproductor (Ctrl+Shift+M) ya no se sale de la pantalla en los bordes ni con dos monitores de distinta escala.",
+                      "exeUrl":  "https://github.com/baninafra/free-media/releases/download/free-music-v1.1.7/FreeMusic-v1.1.7-setup.exe"
                   },
     "freeVideo":  {
                       "appName":  "Free Video",
